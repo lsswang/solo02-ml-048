@@ -1,0 +1,21 @@
+{
+  "identity": [[1,0,0],[0,1,0],[0,0,1]],
+  "before_registration": {"source": [[0,0],[1,0],[0,1],[1,1]], "destination": [[0,0],[1,0],[0,1],[1,1]], "weights": [1,1,1,1]},
+  "after_registration": {"source": [[2,0],[3,0],[2,1],[3,1]], "destination": [[0,0],[1,0],[0,1],[1,1]], "weights": [1,1,1,1]},
+  "projective_registration": {"source": [[0,0],[1,0],[0,1],[1,1]], "destination": [[0,0],[0.8,0],[0,1],[0.8,0.8]], "weights": [1,1,1,1]},
+  "projective_truth": [[1,0,0],[0,1,0],[0.25,0,1]],
+  "coupling_request": {
+    "reference": [[0.1,0.1],[0.1,0.1]], "lambda": 1.0, "mu": 0.0,
+    "sources": [
+      {"image": [[0,0,1,1],[0,0,1,1]], "mask": [[true,true,true,true],[true,true,true,true]], "confidence": 1},
+      {"image": [[0.6,0.6],[0.6,0.6]], "mask": [[true,true],[true,true]], "confidence": 1}
+    ]
+  },
+  "seam_request": {
+    "reference": [[0,0],[0,0]], "lambda": 1.0, "mu": 0.0,
+    "sources": [
+      {"image": [[0,1],[1,0]], "mask": [[true,true],[true,true]], "confidence": 1},
+      {"image": [[1,0],[0,1]], "mask": [[true,true],[true,true]], "confidence": 1}
+    ]
+  }
+}
